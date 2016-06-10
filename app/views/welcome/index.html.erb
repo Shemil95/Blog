@@ -3,10 +3,10 @@
     <h2>About</h2>
     <hr>
     <p>I'm developer living in Grozny, Chechnya.</p>
-    <p><a href="http://vk.com/id203398404" target="_blank">VK</p>
-    <p><a href="https://www.facebook.com/shemil.shemilov" target="_blank">Facebook</p>
-    <p> <a href="https://github.com/Shemil95" target="_blank">GitHub</p>
-    
+    <p><a href="http://vk.com/id203398404" target="_blank">VK</a></p>
+    <p><a href="https://www.facebook.com/shemil.shemilov" target="_blank">Facebook</a></p>
+    <p> <a href="https://github.com/Shemil95" target="_blank">GitHub </a></p>
+   
   </div>
   <div class="col-2 homepage_content">
     <h2>Article</h2>
@@ -19,6 +19,9 @@
   <div class="col-3 homepage_content">
     <h2>Stuff I've Built</h2>
     <hr>
- 
+    <% @projects.each do |project| %>
+      <h3><%= link_to project.title, project %></h3>
+      <p class="date"><%= project.created_at.strftime("%A, %b %d") %></p>  
+    <% end %>
   </div>
 </div>

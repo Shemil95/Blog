@@ -19,6 +19,21 @@
       
       }
     }
+    .new {
+      margin: 10% 43% 10% 43%;
+      padding: 10px;
+      border: 2px solid $border;
+      &:hover {
+        border: 2px solid $highlight;
+        a {
+          color: $highlight;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: $dark;
+      }
+    }
     hr {
       margin: 3em auto;
     }

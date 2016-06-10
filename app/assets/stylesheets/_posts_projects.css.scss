@@ -77,9 +77,23 @@
     font-size: .8em;
     text-transform: uppercase;
     text-decoration: none;
-  }
-}
+    }
 
+  .delete {
+     &:hover {
+      color: red;
+    }
+  }
+
+  .edit {
+    &:hover{
+      color: $highlight;
+    }
+  }
+
+
+
+}
 // - - - - - - Pagination
 
 .pagination:before,
